@@ -49,18 +49,15 @@ Apoio Artigo Bigtable
 ### count register from a table
 ``cbt count bus-data``
 
-### criar referencia para tabela do bigtable no bigqueryÇ
-``bq mk --external_table_definition=my-bigtable-def teste.mytable2``
-
 
 ### setting version policy
 ``cbt setgcpolicy catalog descr maxversions=1``
 
-###  - criar column family
+###  - creat column family
 ``cbt createfamily catalog descr``
 
 
-###  criar registro:
+###  insert a record:
 ``pattern: cbt set <table> <rowID> <colFamily>:<colQualifier>=<value>``
 ``cbt set catalog sku123 descr:title="Antique Clock"``
 
